@@ -30,46 +30,47 @@ export default function SAPConsultingWebsite() {
     "Adobe Forms",
     "Process-Oriented SAP Consulting",
     "Manufacturing & Logistics Solutions",
+    "AI Agents"
   ];
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
       {/* HERO */}
-     <section className="border-b border-sky-900/30">
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <section className="border-b border-sky-900/30">
+        <div className="max-w-7xl mx-auto px-6 py-16">
 
-    <div className="flex justify-center mb-12">
-      <Image
-        src="/logo/futurefactoryx-logo.png"
-        alt="FutureFactoryX"
-        width={1200}
-        height={100}
-        priority
-        className="w-full max-w-5xl object-contain"
-      />
-    </div>
+          <div className="flex justify-center mb-4">
+            <Image
+              src="/logo/futurefactoryx-logo.png"
+              alt="FutureFactoryX"
+              width={1200}
+              height={100}
+              priority
+              className="w-full max-w-5xl object-contain"
+            />
+          </div>
 
-    <div className="text-center max-w-4xl mx-auto">
+          <div className="text-center max-w-4xl mx-auto">
 
-      <p className="uppercase tracking-[0.35em] text-sky-400 mb-6">
-        Technology • Process • Execution
-      </p>
+            <p className="uppercase tracking-[0.35em] text-sky-400 mb-6">
+              Technology • Process • Execution
+            </p>
 
-      <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-8">
-        Building the Future Factory through technology and process excellence.
-      </h1>
+            <h1 className="text-3xl lg:text-5xl font-bold leading-tight mb-8">
+              Building the Future Factory through technology and process excellence.
+            </h1>
 
-      <p className="text-xl text-slate-300 leading-relaxed mb-10">
-        SAP development, Fiori applications, integrations and manufacturing
-        solutions designed around real business processes.
-      </p>
+            <p className="text-xl text-slate-300 leading-relaxed mb-10">
+              SAP development, Fiori applications, integrations and manufacturing
+              solutions designed around real business processes.
+            </p>
 
-    </div>
-  </div>
-</section>
+          </div>
+        </div>
+      </section>
 
       {/* ABOUT */}
-      <section className="max-w-6xl mx-auto px-6 py-24">
+      <section className="bg-slate-900 max-w-6xl mx-auto px-6 py-24">
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
             <p className="uppercase tracking-[0.25em] text-sm text-sky-400 mb-6">
@@ -104,7 +105,7 @@ export default function SAPConsultingWebsite() {
       </section>
 
       {/* SERVICES */}
-      <section className="bg-slate-900 border-y border-slate-800">
+      <section className="bg-slate-950 border-y border-slate-800">
         <div className="max-w-6xl mx-auto px-6 py-24">
           <div className="mb-14">
             <p className="uppercase tracking-[0.25em] text-sm text-sky-400 mb-6">
@@ -120,7 +121,7 @@ export default function SAPConsultingWebsite() {
             {services.map((service) => (
               <div
                 key={service}
-                className="bg-slate-950 rounded-[2rem] p-8 border border-slate-800 shadow-sm hover:-translate-y-1 transition"
+                className="bg-slate-900 rounded-[2rem] p-8 border border-slate-800 shadow-sm hover:-translate-y-1 transition"
               >
                 <h3 className="text-xl font-semibold leading-snug">
                   {service}
@@ -132,7 +133,7 @@ export default function SAPConsultingWebsite() {
       </section>
 
       {/* CASE STUDIES */}
-      <section className="max-w-6xl mx-auto px-6 py-24">
+      <section className="bg-slate-900 max-w-6xl mx-auto px-6 py-24">
         <div className="mb-14">
           <p className="uppercase tracking-[0.25em] text-sm text-sky-400 mb-6">
             Case Studies
@@ -160,7 +161,7 @@ export default function SAPConsultingWebsite() {
           ].map((item) => (
             <div
               key={item.title}
-              className="rounded-[2rem] border border-slate-800 p-8"
+              className="rounded-[2rem] border border-slate-950 bg-slate-950 p-8"
             >
               <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
               <p className="text-slate-300 leading-relaxed">{item.text}</p>
