@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950">
       <nav className="mx-auto flex h-12 max-w-7xl items-center justify-between px-6">
         <Link
         href="/"

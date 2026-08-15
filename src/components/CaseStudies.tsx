@@ -1,6 +1,6 @@
 export default function CaseStudies() {
     return (
-      <section className="bg-slate-900">
+      <section className="bg-[#0B1120]">
         <div className="max-w-6xl mx-auto px-6 py-24">
           <div className="mb-14">
             <p className="uppercase tracking-[0.25em] text-sm text-sky-400 mb-6">

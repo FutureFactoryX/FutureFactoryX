@@ -1,6 +1,6 @@
 export default function About() {
     return (
-            <section className="bg-slate-900">
+            <section className="relative bg-slate-900">
                 <div className="max-w-6xl mx-auto px-6 py-24">
                     <div className="grid lg:grid-cols-2 gap-16">
                         <div>
