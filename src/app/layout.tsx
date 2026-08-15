@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from '@/components/Navbar';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,7 +19,10 @@ export const metadata: Metadata = {
     "Technology, Process and Execution. SAP, Fiori, Integrations and Manufacturing Solutions.",
 
   openGraph: {
-    title: "FutureFactoryX",
+    title: {
+      default: "FutureFactoryX",
+      template: "%s | FutureFactoryX",
+      },
     description:
       "Technology, Process and Execution.",
     url: "https://futurefactoryx.com",
@@ -46,7 +50,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-screen bg-slate-950 text-slate-100">{children}</body>
+      <body className="min-h-screen bg-slate-900 text-slate-100">
+        <Navbar />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
