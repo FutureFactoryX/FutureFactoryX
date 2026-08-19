@@ -1,10 +1,10 @@
 export default function About() {
     return (
-            <section className="relative bg-slate-900">
+            <section className="relative bg-slate-100 text-slate-900">
                 <div className="max-w-6xl mx-auto px-6 py-24">
                     <div className="grid lg:grid-cols-2 gap-16">
                         <div>
-                        <p className="uppercase tracking-[0.25em] text-sm text-sky-400 mb-6">
+                        <p className="uppercase tracking-[0.25em] text-sm text-sky-600 mb-6">
                             About
                         </p>
 
@@ -15,7 +15,7 @@ export default function About() {
                         </h2>
                         </div>
 
-                        <div className="space-y-6 text-lg text-zinc-700 leading-relaxed">
+                        <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
                         <p>
                             My background combines SAP technical development with practical
                             understanding of manufacturing and logistics processes.

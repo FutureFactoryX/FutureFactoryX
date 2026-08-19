@@ -6,18 +6,18 @@ export default function Hero() {
   return (
     <section 
       aria-label="FutureFactoryX introduction"
-      className="bg-white border-b border-sky-900/30">
+      className="bg-white border-b border-slate-150">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-32">
           <div className="relative grid items-center gap-8 lg:grid-cols-2">
             {/* CONTENT */}
-            <div className="relative z-100">
+            <div className="relative z-10">
               <p className="mb-6 text-sm uppercase tracking-[0.35em] text-slate-600">
                 Technology • Process • Execution
               </p>
 
-              <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-slate-600 sm:text-5xl lg:text-6xl">
+              <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
                 Building the
-                <span className="text-sky-400">
+                <span className="text-sky-600">
                   {" "}Future Factory
                 </span>
                 {" "}through SAP technology.
@@ -75,11 +75,12 @@ export default function Hero() {
               inset-y-0
               right-0
               z-0
-              flex
+              hidden
               w-full
               items-center
               justify-end
-              overflow-visible">
+              overflow-visible
+              lg:flex">
               <div className="
                 relative
                 w-[95%]
