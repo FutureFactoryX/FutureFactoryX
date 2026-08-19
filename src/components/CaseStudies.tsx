@@ -1,6 +1,6 @@
 export default function CaseStudies() {
     return (
-      <section className="bg-[#0B1120]">
+      <section className="bg-slate-100 text-slate-900">
         <div className="max-w-6xl mx-auto px-6 py-24">
           <div className="mb-14">
             <p className="uppercase tracking-[0.25em] text-sm text-sky-400 mb-6">
@@ -29,7 +29,7 @@ export default function CaseStudies() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="rounded-[2rem] border border-slate-950 bg-slate-950 p-8"
+                className="rounded-2x1 border border-slate-200 bg-white p-8 shadow-sm"
               >
                 <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
                 <p className="text-slate-300 leading-relaxed">{item.text}</p>
