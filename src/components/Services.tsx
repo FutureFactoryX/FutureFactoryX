@@ -27,7 +27,7 @@ export default function Services() {
   ];
 
     return (
-      <section className="bg-blue-950 border-y border-slate-800">
+      <section className="bg-slate-800 border-y border-slate-800">
         <div className="max-w-6xl mx-auto px-6 py-24">
           <div className="mb-14">
             <p className="uppercase tracking-[0.25em] text-sm text-sky-400 mb-6">
