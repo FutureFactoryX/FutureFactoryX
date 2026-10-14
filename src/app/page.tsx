@@ -13,9 +13,9 @@ export default function HomePage() {
         <Hero />
         <TechnologyStrip/>
         <BlogPreview />
-        <About />
         <Services />
         <CaseStudies />
+        <About />
         <Contact />
       </>
   );

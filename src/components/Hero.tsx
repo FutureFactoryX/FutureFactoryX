@@ -215,11 +215,11 @@ export default function Hero() {
               <div className="bg-slate-950 px-7 py-5">
                 <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs font-medium text-slate-300">
                   <span>SAP</span>
-                  <span>→</span>
+                  <span>⮞</span>
                   <span>Integration</span>
-                  <span>→</span>
+                  <span>⮞</span>
                   <span>Manufacturing</span>
-                  <span>→</span>
+                  <span>⮞</span>
                   <span>Execution</span>
                 </div>
               </div>
