@@ -90,7 +90,7 @@ export default function About() {
                                 hover:text-sky-600
                             "
                         >
-                            More about me ⮞
+                            More about me  ⮞
                         </Link>
                     </div>
                 </div>

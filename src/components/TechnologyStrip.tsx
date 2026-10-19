@@ -13,7 +13,7 @@ export default function TechnologyStrip() {
         
         <section
             aria-label="Technology expertise"
-            className="border-b border-slate-200 bg-slate-50"
+            className="border-b border-slate-300 bg-slate-100"
         >
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div

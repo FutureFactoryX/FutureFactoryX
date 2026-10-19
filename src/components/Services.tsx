@@ -1,81 +1,104 @@
+import Link from "next/link";
+
+const expertise = [
+  {
+    number:"01",
+    title: "Manufacturing applications",
+    description:
+      "SAP applications designed around production, warehouse and operational workflows.",
+    technologies: "Fiori / UI5 • Shopfloor UX • Process simplification",
+  },
+  {
+    number:"02",
+    title: "SAP engineering",
+    description:
+      "Maintaiinable SP development focused on clean architecture and long-term usability.",
+    technologies: "ABAP • OData • Adobe Forms • Enhancements",
+  },
+  {
+    number:"03",
+    title: "System integration",
+    description:
+      "Reliable connections between SAP and the systems supporting engineering and manufacturing.",
+    technologies: "Integration Suite • APIs • External systems",
+  },
+  {
+    number:"04",
+    title: "Process & UX",
+    description:
+      "Understanding the process before automating it - and designing solutions people actually want to use.",
+    technologies: "Process design • UX • Technical architecture",
+  }
+];
+
 export default function Services() {
-    
-    const services = [
-    "SAP ABAP Development",
-    "SAP Fiori / UI5 Applications",
-    "ODATA Services",
-    "SAP Integration Suite",
-    "Adobe Forms",
-    "Process-Oriented SAP Consulting",
-    "Manufacturing & Logistics Solutions",
-    "AI Agents"
-  ];
-
-    const metrics = [
-    {
-      value: "10+",
-      label: "Projects delivered",
-    },
-    {
-      value: "5+",
-      label: "Integrations implemented",
-    },
-    {
-      value: "10",
-      label: "Years of SAP experience",
-    },
-  ];
-
-    return (
-      <section className="bg-slate-800 border-y border-slate-800">
-        <div className="max-w-6xl mx-auto px-6 py-24">
-          <div className="mb-14">
-            <p className="uppercase tracking-[0.25em] text-sm text-sky-400 mb-6">
-              Services
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
+        <div className="mb-14 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-600">
+              Expertise
             </p>
 
-            <h2 className="text-4xl font-bold leading-tight max-w-3xl">
-              Technical SAP solutions aligned with operational reality.
+            <h2 className="mt-6 text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">
+              From SAP technology to operational execution.
             </h2>
+
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+              Technical expertise matters most when it solves a real process problem. These are
+              the areas where technology and manufacturing meet.
+            </p>
           </div>
 
-{/* EXPERIENCE METRICS */}
-<div className="mb-16 overflow-hidden rounded-[2rem] border border-sky-900/40 bg-slate-900/70 shadow-[0_20px_60px_rgba(2,6,23,0.25)]">
-  <div className="grid grid-cols-1 divide-y divide-slate-800 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
-    {metrics.map((metric) => (
-      <div
-        key={metric.label}
-        className="relative px-8 py-9 text-center sm:px-6 lg:py-10"
-      >
-        {/* subtle accent */}
-        <div className="absolute left-1/2 top-0 h-1 w-10 -translate-x-1/2 rounded-full bg-sky-400" />
-
-        <p className="text-5xl font-bold tracking-tight text-white">
-          {metric.value}
-        </p>
-
-        <p className="mt-3 text-sm font-medium uppercase tracking-[0.15em] text-sky-300">
-          {metric.label}
-        </p>
-      </div>
-    ))}
-  </div>
-</div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service) => (
-              <div
-                key={service}
-                className="bg-slate-900 rounded-[2rem] p-8 border border-slate-800 shadow-sm hover:-translate-y-1 transition"
-              >
-                <h3 className="text-xl font-semibold leading-snug">
-                  {service}
-                </h3>
-              </div>
-            ))}
-          </div>
+          <Link
+            href="/expertise"
+            className="text-sm font-semibold text-sky-700 hover:text-sky-600"
+          >
+            Explore expertise ⮞
+          </Link>
         </div>
-      </section>
 
-        );
-    }
+        <div className="grid gap-5 md:grid-cols-2">
+          {expertise.map((item) => (
+            <article
+              key={item.number}
+              className="
+                group
+                rounded-[2rem]
+                border
+                border-slate-200
+                bg-slate-50
+                p-8
+                transition
+                duration
+                hover:translate-y-1
+                hover:border-sky-200
+                hover:shadow-lg
+                hover:shadow-slate-900/5
+                lg:p-10
+              "
+            >
+              <span className="text-sm font-semibold text-sky-600">
+                {item.number}
+              </span>
+
+              <h3 className="mt-8 text-2xl font-semibold tracking-tight text-slate-950">
+                {item.title}
+              </h3>
+
+              <p className="mt-4 max-w-xl leading-7 text-slate-600">
+                {item.description}
+              </p>
+
+              <p className="mt-8 text-sm font-medium text-slate-500">
+                {item.technologies}
+              </p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
