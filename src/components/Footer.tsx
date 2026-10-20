@@ -86,7 +86,7 @@ export default function Footer() {
                     "
                 >
                     <p>
-                        © {new Date().getFullYear()} FutureFactoryX.
+                        © {new Date().getFullYear()} FutureFactoryX
                     </p>
 
                     <p>
